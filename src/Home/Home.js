@@ -1,4 +1,5 @@
 import { useState } from 'react';
+import AddBlog from '../AddBlog/AddBlog';
 
 const Home = () => {
   const [blogs, setBlogs] = useState([
@@ -11,10 +12,15 @@ const Home = () => {
       id: 3,
     },
   ]);
+
   return (
     <div className="home">
-      {blogs.map((blog) => (
-        <div className="blog-preview" key={blog.id}>
+      <AddBlog listOfBlogs={blogs} setListOfBlogs={setBlogs} />
+      {blogs.map((blog, index) => (
+        <div
+          className="blog-preview"
+          key={blog.id ? blog.id : Math.floor(Math.random() * index + 5)}
+        >
           <h2>{blog.title}</h2>
           <p>written by {blog.author}</p>
         </div>

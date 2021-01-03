@@ -1,0 +1,45 @@
+.blog {
+  display: flex;
+  flex-direction: column;
+  align-content: center;
+  justify-content: center;
+}
+.blog * {
+  width: 25%;
+  margin: 0 auto;
+}
+.blogLabel {
+  color: #f1356d;
+  font-weight: 900;
+  font-size: 1.1em;
+  margin-bottom: 0.2em;
+}
+.blogInput {
+  padding: 0.6em 0.3em;
+  font-size: 1.1em;
+  border: none;
+  box-shadow: 2px 1px 7px rgb(241, 53, 109);
+  outline: none;
+}
+.blogInput:hover,
+.blogInput:active,
+.blogInput:focus {
+  box-shadow: 4px 3px 7px rgb(241, 53, 109);
+}
+.blogSubmit {
+  margin-top: 1.2em;
+  padding: 0.6em;
+  color: #f1356d;
+  font-weight: 900;
+  font-size: 1.1em;
+  border: 2px solid #f1356d;
+  background-color: white;
+  border-radius: 16px;
+  transition: 0.2s ease-in-out;
+}
+.blogSubmit:hover,
+.blogSubmit:active {
+  color: #fff;
+  background-color: #f1356d;
+  outline: none;
+}
